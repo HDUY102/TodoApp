@@ -2,7 +2,7 @@ import React from 'react'
 
 const TableTodo = () => {
   return (
-    <div>
+    <div className=' flex flex-col shadow-lg mt-4 mb-6'>
         <table className='table mt-5'>
             {/* head */}
             <thead>

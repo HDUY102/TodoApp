@@ -5,17 +5,17 @@ const HeaderNav = () => {
   return (
     <div>
         {/* Page Header BEGIN */}
-        <ul className='flex p-4 place-content-between font-bold h-15 bg-stone-900 text-white'>
-            <li className='hover:text-yellow-400'>
-                <Link href={'/'}>Home</Link>
+        <ul className='menu menu-horizontal bg-stone-900 rounded-box mt-6 flex font-sans p-3 justify-evenly font-bold text-white'>
+            <li className='hover:bg-white rounded-box'>
+                <Link href={'/'}>HOME</Link>
             </li>
-            <li className='hover:text-yellow-400'>
-                <Link href={'/Categories'}>Categories</Link></li>
-            <li className='hover:text-yellow-400'>
-                <Link href={'/About'}>About</Link>
+            <li className='hover:bg-white rounded-box'>
+                <Link href={'/Categories'}>CATEGORIES</Link></li>
+            <li className='hover:bg-white rounded-box'>
+                <Link href={'/About'}>ABOUT</Link>
             </li>
-            <li className='hover:text-yellow-400'>
-                <Link href={'/Contact'}>Contact</Link>
+            <li className='hover:bg-white rounded-box'>
+                <Link href={'/Contact'}>CONTACT</Link>
             </li>
         </ul>
         {/* Page Header END */}

@@ -3,6 +3,7 @@ import React from 'react'
 import HeaderNav from '../components/HeaderNav'
 import AddTaskForm from '../components/AddTaskForm'
 import TodoHeader from '../components/TodoHeader'
+import TableTodo from '../components/TableTodo'
 
 const TodoAppPage = () => {
   return (
@@ -10,6 +11,7 @@ const TodoAppPage = () => {
         <HeaderNav/>
         <AddTaskForm/>
         <TodoHeader/>
+        <TableTodo/>
     </div>
   )
 }

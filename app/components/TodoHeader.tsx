@@ -1,11 +1,20 @@
 import React from 'react'
-import {FaFaceAngry,FaFaceGrinBeam,FaFaceGrinHearts} from 'react-icons/fa6'
+import {FaFileCircleXmark,FaFileLines,FaFileCircleCheck} from 'react-icons/fa6'
 const TodoHeader = () => {
   return (
-    <div className=' flex justify-center font-semibold px-1'>
-        <FaFaceAngry className='text-red-600'/> <br/> Normal
-        <FaFaceGrinBeam className='text-yellow-400'/> <br/> All
-        <FaFaceGrinHearts className='text-blue-400'/> <br/> Done
+    <div className='font-semibold flex justify-evenly text-center'>
+        <div>
+          <FaFileCircleXmark className='text-red-600 ml-11 mt-10 mb-5 w-14 h-10'/> 
+          <a href='#' className='ml-10'>Normal</a>
+        </div>
+        <div>
+          <FaFileLines className='text-yellow-400 mt-10 mb-5 w-14 h-10'/>
+          <a href='#'>All</a>
+        </div>
+        <div>
+          <FaFileCircleCheck className='text-blue-400 ml-2 mt-10 mb-5 w-14 h-10'/> 
+          <a href='#'>Done</a>
+        </div>
     </div>
   )
 }

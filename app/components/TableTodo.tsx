@@ -2,13 +2,13 @@ import React from 'react'
 
 const TableTodo = () => {
   return (
-    <div className="overflow-x-auto">
-        <table className='table'>
+    <div>
+        <table className='table mt-5'>
             {/* head */}
             <thead>
-            <tr className='border-b-2'>
+            <tr>
                 <th>
-                    <input type="checkbox" className="checkbox" /> ALL
+                    <input type="checkbox" className="checkbox align-middle content-center"/> ALL
                 </th>
                 <th>ID</th>
                 <th>Name</th>
@@ -18,19 +18,19 @@ const TableTodo = () => {
             </thead>
             <tbody>
             {/* row 1 */}
-            <tr className=' border-b-2'>
+            <tr>
                 <th>
                     <input type="checkbox" className="checkbox" />
                 </th>
                 <td>
                     <div className="flex items-center space-x-3">
-                        <div className="font-bold">1</div>
+                        <div>1</div>
                     </div>
                 </td>
                 <td>
                     HTML
                     <br/>
-                    <span className="badge badge-ghost badge-sm">World Wide Web</span>
+                    <span className="badge badge-ghost badge-sm">Hypertext Markup Language</span>
                 </td>
                 <td>Do HTML</td>
                 <th>
@@ -39,13 +39,13 @@ const TableTodo = () => {
                 </th>
             </tr>
             {/* row 2 */}
-            <tr className=' border-b-2'>
+            <tr>
                 <th>
                     <input type="checkbox" className="checkbox" />
                 </th>
                 <td>
                     <div className="flex items-center space-x-3">
-                        <div className="font-bold">2</div>
+                        <div>2</div>
                     </div>
                 </td>
                 <td>
@@ -66,7 +66,7 @@ const TableTodo = () => {
                 </th>
                 <td>
                     <div className="flex items-center space-x-3">
-                        <div className="font-bold">3</div>
+                        <div>3</div>
                     </div>
                 </td>
                 <td>

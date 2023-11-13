@@ -4,6 +4,7 @@ import HeaderNav from '../components/HeaderNav'
 import AddTaskForm from '../components/AddTaskForm'
 import TodoHeader from '../components/TodoHeader'
 import TableTodo from '../components/TableTodo'
+import TodoList from '../components/TodoList'
 
 const TodoAppPage = () => {
   return (
@@ -12,6 +13,7 @@ const TodoAppPage = () => {
         <AddTaskForm/>
         <TodoHeader/>
         <TableTodo/>
+        <TodoList/>
     </div>
   )
 }

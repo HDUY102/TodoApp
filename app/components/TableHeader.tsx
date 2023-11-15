@@ -11,10 +11,6 @@ const TableTodo = () => {
               <th>ID</th>
               <th>Name</th>
               <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
             </tr>
           </thead>
         </table>

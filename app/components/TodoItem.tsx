@@ -3,11 +3,10 @@ import { Task } from '../lib/types'
 const TodoItem = ({task}:{task:Task}) => {
   return (
     <div>
-        <tbody className='table border-b'>
-            <tr >
-                <td>
+            <tr className='table border-b'>
+                <th>
                     <input type="checkbox" className="checkbox" />
-                </td>
+                </th>
                 <td>
                     <div className="flex items-center gap-3">
                         <div className="avatar">
@@ -22,12 +21,11 @@ const TodoItem = ({task}:{task:Task}) => {
                     <br/>
                     <span className="badge badge-ghost badge-sm">Hypertext Markup Language</span>
                 </td>
-                <td>
+                <th>
                     <button className="btn btn-ghost btn-xs hover:bg-green-400">Edit</button>
                     <button className="btn btn-ghost btn-xs hover:bg-red-500">Delete</button>
-                </td>
+                </th>
             </tr>
-        </tbody>
     </div>
   )
 }

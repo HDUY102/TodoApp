@@ -2,8 +2,10 @@ import React from 'react'
 import { Task } from '../lib/types'
 const TodoItem = ({task}:{task:Task}) => {
   return (
-    <div>
-            <tr className='table border-b'>
+    <div className='overflow-x-auto justify-center'>
+        <table className='table border-b'>
+            <tbody>
+                <tr>
                 <th>
                     <input type="checkbox" className="checkbox" />
                 </th>
@@ -26,6 +28,8 @@ const TodoItem = ({task}:{task:Task}) => {
                     <button className="btn btn-ghost btn-xs hover:bg-red-500">Delete</button>
                 </th>
             </tr>
+            </tbody>
+        </table>
     </div>
   )
 }

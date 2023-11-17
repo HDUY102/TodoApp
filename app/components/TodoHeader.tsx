@@ -5,7 +5,7 @@ const TodoHeader = () => {
     <div className='font-semibold flex justify-evenly text-center'>
         <div>
           <FaFileCircleXmark className='text-red-600 ml-11 mt-10 mb-5 w-14 h-10'/> 
-          <a href='#' className='ml-10'>Normal</a>
+          <a href='#' className='ml-10'>Deleted</a>
         </div>
         <div>
           <FaFileLines className='text-yellow-400 mt-10 mb-5 w-14 h-10'/>

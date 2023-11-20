@@ -1,19 +1,13 @@
+'use client'
 import { Task } from '../lib/types'
 import TodoItem from './TodoItem'
 
-async function getData() {
-    const res = await fetch('http://localhost:3000/api/todos',{ cache: 'no-store' })
-    if (!res.ok) {
-      throw new Error('Failed to fetch data')
-    }
-   
-    return res.json()
-  }
-const TodoList = async() => {
-    const todoTasks = await getData();
+
+const TodoList = ({tasksToList}:{tasksToList:Task[]}) => {
+    
   return (
     <div>
-        {todoTasks.map((task:Task)=>(
+        {tasksToList.map((task:Task)=>(
             <TodoItem task={task}/>
         ))}
     </div>

@@ -5,5 +5,9 @@ export async function GET(
     request:NextRequest,
     {params}:{params:{isDeleted: boolean}}) {
     let task = tasks.filter((task) => task.isDeleted === params.isDeleted);
-    return NextResponse.json(task);
+    if(task.length>0){
+        return NextResponse.json(task);
+    }else{
+        return NextResponse.json({message: "Không có task nào bị xóa"});
+    }
 }

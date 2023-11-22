@@ -1,49 +1,27 @@
-'use client'
-
 import React from 'react'
-import AddTaskForm from '../components/AddTaskForm'
-import TodoHeader from '../components/TodoHeader'
-import TableHeader from '../components/TableHeader'
-import TodoList from '../components/TodoList'
+import HeaderNav from './HeaderNav'
+import AddTaskForm from './AddTaskForm'
+import ListTasks from './ListTasks'
 
-async function getData() {
-  const res = await fetch('http://localhost:3000/api/todos',{ cache: 'no-store' })
+async function getAllTodoTasks() {
+  const res = await fetch("http://localhost:3000/api/todos", {
+    cache: "no-store",
+  });
   if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    throw new Error("Failed to fetch data");
   }
- 
-  return res.json()
+  return res.json();
 }
 
-const TodoAppPage = async () => {
-
-   
-  const todoTasks = await getData();
-
-  let tasksToList = todoTasks;
-
-  function showAllDeletedItems(){
-    alert('ababcbc')
-    tasksToList = todoTasks.filter(()=>tasksToList.isDeleted==true);
-    console.log(tasksToList)
-  }
-
-  function showAllDoneItems(){
-    tasksToList = todoTasks.filter(()=>tasksToList.isDone==true);
-  }
-
-  function showAllItems(){
-    tasksToList = todoTasks
-  }
-
+const MyTodoApp = async () => {
+  const todoTasks = await getAllTodoTasks();
   return (
     <div>
+        <HeaderNav/>
         <AddTaskForm/>
-        <TodoHeader showAllDeletedItems={showAllDeletedItems} showAllDoneItems={showAllDoneItems} showAllItems={showAllItems}/>
-        <TableHeader/>
-        <TodoList tasksToList={tasksToList}/>
+        <ListTasks tasks={todoTasks}/>
     </div>
   )
 }
 
-export default TodoAppPage
+export default MyTodoApp

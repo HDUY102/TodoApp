@@ -4,10 +4,7 @@ import MyTodoApp from '../components/MyTodoApp'
 const TodoAppPage = () => {
   return (
     <div>
-        {/* <HeaderNav/> */}
         <MyTodoApp/>
-        {/* <AddTaskForm /> */}
-        {/* <ListTasks tasks={todoTasks} /> */}
     </div>
   )
 }

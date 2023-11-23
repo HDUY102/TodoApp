@@ -9,7 +9,6 @@ const TodoList = ({tasksToList}:{tasksToList:Task[]}) => {
         {tasksToList.map((task:Task)=>(
             // <TodoItem task={task}/> //code ban đầu
             <TodoItem key={task.id} task={task}/> //fix warning
-
         ))}
     </div>
   )

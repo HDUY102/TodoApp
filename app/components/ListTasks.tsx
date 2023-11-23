@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { Task } from "../lib/types";
 import TodoList from "./TodoList";
 import TodoHeader from "./TodoHeader";
+import TableHeader from "./TableHeader";
+
 
 const ListTasks = ({ tasks }: { tasks: any }) => {
   const [tasksToList, setTasksToList] = useState(tasks);
@@ -27,6 +29,7 @@ const ListTasks = ({ tasks }: { tasks: any }) => {
         showAllDoneItems={getAllDoneTasks}
         showAllItems={getAllTasks}
       />
+      <TableHeader/>
       <TodoList tasksToList={tasksToList} />
     </div>
   );
